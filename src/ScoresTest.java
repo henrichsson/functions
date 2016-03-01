@@ -9,13 +9,7 @@ public class ScoresTest
 	public void SetUp()
 	{
 	    s = new Scores();	     
-	}
-	
-	@Test
-	public void TestInequality()
-	{
-		assertNotEquals(49, s.nscORe(49));
-	}
+	}	
 	
 	@Test
 	public void TestNegative_1()
