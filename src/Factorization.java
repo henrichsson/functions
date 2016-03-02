@@ -5,17 +5,11 @@ public class Factorization
 		if(n >= 1)
 		{
 			int twos = 0;
-			    
-			for (int i = 2; i <= n; i++)
+			
+			while (n % 2 == 0)
 			{
-				while (n % i == 0)
-			    {
-					if(i == 2)
-			    	{
-						twos++;
-			    	}		    	
-			        n /= i;
-			    }
+				twos++;					
+			    n /= 2;
 			}
 			
 			return twos;
